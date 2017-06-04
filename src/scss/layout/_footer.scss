@@ -1,12 +1,52 @@
 #footer {
     background-color: #43403f;
-    padding: 81px 6px 80px 0;
+    padding: 81px 6px 36px 0;
     font-size: 13px;
+    overflow: hidden;
     @include media('<desktop') {
-    	padding: 40px 0;
+    	padding: 40px 0 20px;
     }
     @include media('<640px') {
     	padding-left: 80px;
+    }
+    .position4{
+    	position:absolute;
+    	bottom:-94px;
+    	left:0;
+    	transform:rotate(-17deg);
+    	opacity: .15;
+    			@include media('<widescreen') {
+    				width: 200px;
+    				bottom:-50px;
+    				left:15%;
+    			}
+    			@include media('<tablet') {
+    				left:0;
+    			}
+    			@include media('<phone') {
+    				left:-100px;
+    				z-index: 1;
+    			}
+    }
+    .position5{
+    	position:absolute;
+    	bottom:-46px;
+    	left:500px;
+    			transform:rotate(-7deg);
+    	  	opacity: .15;
+    	  	@include media('<widescreen') {
+    				width: 150px;
+    				bottom:0px;
+    				left:50%;
+    			}
+    			@include media('<tablet') {
+    				left:auto;right:0;
+    				bottom:-20px;
+    			}
+    			
+    }
+    .container{
+    	position: relative;
     }
     .contact-data {
         float: right;
