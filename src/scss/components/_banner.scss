@@ -113,6 +113,7 @@
         font-size: 36px;
         display: block;
         font-weight: 400;
+        text-transform: none;
         @include media('<widescreen') {
             font-size: 24px;
         }

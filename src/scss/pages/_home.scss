@@ -56,8 +56,8 @@
         padding-top: 30px;
     }
     @include media('<desktop') {
-    	padding: 20px 0 50px;
-    }	
+        padding: 20px 0 50px;
+    }
     .position1 {
         position: absolute;
         top: 8%;
@@ -127,17 +127,17 @@
     animation-name: car;
     animation-duration: 30000s;
     @include media('<desktop') {
-    	height: 100px; 	
-    	    background-size: 130px 40px;
-    }	
+        height: 100px;
+        background-size: 130px 40px;
+    }
     @include media('<tablet') {
-    	height: 50px;	
-    	background-size: 120px 30px;
-    }	
+        height: 50px;
+        background-size: 120px 30px;
+    }
 }
 
 .gallery-holder {
-    padding: 95px 0;
+    padding: 95px 0 81px;
     color: red;
     max-width: 750px;
     margin: 0 auto;
@@ -223,5 +223,25 @@
     }
     100% {
         background-position: 1000000px center;
+    }
+}
+
+.home-page {
+    position: relative;
+    .position3 {
+        position: absolute;
+        bottom: -303px;
+        left: 0;
+        display: inline-block;
+         @include media('<widescreen') {
+            bottom:-322px;
+            width: 200px;
+         
+         }
+         @include media('<desktop') {
+            bottom: -200px;
+            width: 100px;
+         }
+                
     }
 }
