@@ -10,6 +10,11 @@
     }
     .logo {
         width: 348px;
+          opacity: 1;
+          @include animate(opacity);
+          &:hover{
+            opacity: .8;
+          }
         @include media('<widescreen') {
             width: 300px;
         }
@@ -24,6 +29,7 @@
             width: 100%;
             height: auto;
         }
+
     }
     .nav {
         @extend %listreset;
